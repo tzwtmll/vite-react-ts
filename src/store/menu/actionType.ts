@@ -1,0 +1,2 @@
+const SAVA_MENU_DATA = 'SAVA_MENU_DATA'
+export { SAVA_MENU_DATA }
