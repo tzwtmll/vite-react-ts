@@ -4,15 +4,15 @@
 
       
 const routes = [{
-  path: '/details/power',
-  label: '权限控制',
-  parentkey: '/details',
-  components: () => import("../pages/power/index.tsx")
-}, {
   path: '/list/home',
   label: '主页',
   parentkey: '/list',
   components: () => import("../pages/Home/index.tsx")
+}, {
+  path: '/details/power',
+  label: '权限控制',
+  parentkey: '/details',
+  components: () => import("../pages/power/index.tsx")
 }, {
   path: '/details/user',
   label: '用户',

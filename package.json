@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"npm run dev",
     "dev": "vite",
     "build": "vite build",
     "mock": "vite --mode mock",
     "preview": "vite preview --port 10001",
-    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix ./src"
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix ./src",
+    "lint:style": "stylelint --fix \"**/*.less\" --custom-syntax postcss-less"
   },
   "keywords": [],
   "author": "",

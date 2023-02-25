@@ -1,4 +1,5 @@
 import 'dayjs/locale/zh-cn'
+import '@/assets/css/global.less'
 
 import { createRoot } from 'react-dom/client'
 import { Provider } from 'react-redux'

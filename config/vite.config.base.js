@@ -1,3 +1,10 @@
+/*
+ * @Author: pdd 483662261@qq.com
+ * @Date: 2023-02-25 17:38:55
+ * @LastEditors: pdd 483662261@qq.com
+ * @LastEditTime: 2023-02-25 17:38:55
+ * @Description: 配置文件
+ */
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
@@ -41,5 +48,17 @@ export default defineConfig({
   },
   define: {
     MENU_PATH: `"path"`
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        charset: false,
+        math: 'always',
+        devSourcemap: true, //定位到源文件中
+        // 全局导入
+        additionalData: `@import "${resolvePath('../src/theme/var.less')}";`
+      }
+    }
   }
 })
