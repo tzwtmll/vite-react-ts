@@ -5,7 +5,7 @@
  * @LastEditTime: 2023-02-25 17:31:43
  * @Description: layout头部
  */
-import { Button, Layout, Modal, Radio } from 'antd'
+import { Button, Layout, Radio } from 'antd'
 import enUS from 'antd/locale/en_US'
 import zhCN from 'antd/locale/zh_CN'
 import dayjs from 'dayjs'

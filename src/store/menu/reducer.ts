@@ -1,5 +1,6 @@
+import { MenuAction, MenuData } from '@/types'
+
 import * as ActionType from './actionType'
-import { MenuData, MenuAction } from '@/types'
 
 const menuData: MenuData = {
   menuInfo: []

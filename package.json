@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "mock": "vite --mode mock",
-    "preview": "vite preview --port 10001"
+    "preview": "vite preview --port 10001",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix ./src"
   },
   "keywords": [],
   "author": "",
