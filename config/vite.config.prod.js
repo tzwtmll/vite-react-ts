@@ -28,7 +28,8 @@ export default defineConfig({
         },
         // chunk
         chunkFileNames: (chunkInfo) => {
-          const hash = createHash('md5')
+          const hash = createHash()
+            .sha256()
             .update(Object.values(chunkInfo.moduleIds).join())
             .digest('hex')
             .substring(0, 8)
