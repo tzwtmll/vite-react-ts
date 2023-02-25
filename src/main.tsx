@@ -1,4 +1,5 @@
-import { ConfigProvider, theme } from 'antd'
+import 'dayjs/locale/zh-cn'
+
 import { createRoot } from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
@@ -10,15 +11,7 @@ const root = createRoot(document.getElementById('root'))
 root.render(
   <BrowserRouter>
     <Provider store={store}>
-      <ConfigProvider
-        theme={{
-          token: {
-            colorPrimary: 'rgb(1, 245, 172)'
-          }
-        }}
-      >
-        <App />
-      </ConfigProvider>
+      <App />
     </Provider>
   </BrowserRouter>
 )

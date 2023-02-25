@@ -11,7 +11,7 @@ import menuRoutes from './menuRoutes'
 function Router() {
   const dispatch = useDispatch()
   const setStateMenuList = useCallback(
-    (list) => dispatch(saveMenuData(list)),
+    (menu) => dispatch(saveMenuData(menu)),
     [dispatch]
   )
   const [showRouter, SetShowRouter] = useState<RouterInfo[]>([])

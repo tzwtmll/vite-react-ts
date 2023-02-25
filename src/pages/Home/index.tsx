@@ -1,7 +1,12 @@
 import React from 'react'
-
+import { DatePicker } from 'antd'
+const { RangePicker } = DatePicker
 function Home() {
-  return <div>Home</div>
+  return (
+    <div>
+      <RangePicker />
+    </div>
+  )
 }
 export default Home
 Home.route = {

@@ -1,6 +1,11 @@
 import React from 'react'
+import { Button } from 'antd'
 function Power() {
-  return <div>Power</div>
+  return (
+    <div>
+      <Button>点击</Button>
+    </div>
+  )
 }
 
 export default Power

@@ -1,9 +1,10 @@
 import * as ActionType from './actionType'
+import { MenuData, MenuAction } from '@/types'
 
-const initGlobalState = {
+const menuData: MenuData = {
   menuInfo: []
 }
-const reducer = (state = initGlobalState, action) => {
+const reducer = (state = menuData, action: MenuAction) => {
   const { type, data } = action
   switch (type) {
     case ActionType.SAVA_MENU_DATA: {

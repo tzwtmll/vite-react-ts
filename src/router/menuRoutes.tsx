@@ -1,13 +1,14 @@
 import React from 'react'
 import { MailOutlined } from '@ant-design/icons'
-interface Routers {
-  label: string
-  path: string
-  key?: string
-  parentkey?: string
-  children?: any
-  icon?: React.ReactNode
-}
+import { Routers } from '@/types'
+// interface Routers {
+//   label: string
+//   path: string
+//   key?: string
+//   parentkey?: string
+//   children?: any
+//   icon?: React.ReactNode
+// }
 // 一级展示展示页面
 const menuRoutes: Routers[] = [
   {
